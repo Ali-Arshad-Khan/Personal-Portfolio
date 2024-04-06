@@ -322,7 +322,7 @@
             list-style: none;
         }
         ul.skill-list li{
-            width: 600px;
+/*             width: 600px; */
             position: relative;
             margin-bottom: 10px;
             color: blueviolet;
