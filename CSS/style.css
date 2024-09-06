@@ -1,0 +1,1230 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  --blue: rgb(138, 43, 226);
+  --black: black;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: none;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-bottom: solid lightgray 1px;
+}
+.mail {
+  display: none;
+}
+
+.nav-bar {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  padding-right: 50px;
+  padding-top: 10px;
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+  padding-right: 50px;
+}
+li {
+  font-size: 14px;
+}
+li a {
+  font-family: Roboto Mono;
+  text-decoration: none;
+}
+li a:hover {
+  color: blueviolet;
+  transition: 0.15s;
+}
+li a:active {
+  color: blueviolet;
+}
+.logo {
+  margin-top: 0%;
+  margin-bottom: 3%;
+  margin-left: 35%;
+  width: 4%;
+  display: flex;
+  gap: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.logo p {
+  font-family: Roboto Mono;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.profile {
+  display: none;
+  margin-left: 50%;
+  margin-top: 20%;
+  width: 100%;
+  border-radius: 50%;
+}
+.resume {
+  padding: 10px 10px;
+  border-style: solid;
+
+  border-color: blueviolet;
+  color: blueviolet;
+  border-width: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.resume:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+.center {
+  margin-top: 80px;
+
+  margin-left: 0px;
+}
+
+/* center css start */
+.center {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.part1 {
+  min-width: 240px;
+  height: 500px;
+}
+
+.part1 h1 {
+  font-weight: 400;
+  font-family: Roboto Mono;
+  font-size: 16px;
+
+  margin-top: 50%;
+  color: var(--blue);
+}
+
+.part1 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 33px;
+  margin-top: 15px;
+}
+.part1 h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(78, 76, 76);
+  font-size: 28px;
+}
+.part1 p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.resume2 {
+  padding: 10px 10px;
+  border-style: solid;
+
+  border-color: blueviolet;
+  color: blueviolet;
+  border-width: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.15s;
+  margin-top: 20%;
+  margin-left: 38%;
+}
+/* part 2 */
+
+.part2 {
+  min-width: 240px;
+
+  margin-top: 20px;
+}
+
+.part2 h1 {
+  font-size: 30px;
+  padding-top: 27%;
+}
+.u {
+  margin-top: 2%;
+  width: 15%;
+  border-bottom: solid black 1px;
+}
+.v {
+  border-bottom: solid black 1px;
+  width: 15%;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+.part2 img {
+  margin-top: 5%;
+  border-radius: 10%;
+  width: 60%;
+  margin-left: 20%;
+  border: solid var(--blue) 1px;
+}
+.part2 p {
+  margin-top: 5%;
+  line-height: 25px;
+}
+ul.skill-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 5px 0px;
+
+  padding-top: 10px;
+
+  overflow: hidden;
+  list-style: none;
+  font-weight: 600;
+}
+ul.skill-list li {
+  color: var(--blue);
+  font-weight: 400;
+}
+
+/* Part 3 */
+
+.part3 {
+  min-width: 240px;
+  height: 100%;
+
+  margin-top: 20px;
+}
+.part3 h1 {
+  font-size: 30px;
+  padding-top: 27%;
+  margin-left: 5%;
+}
+
+.projects-container div {
+  min-width: 240px;
+}
+.project1,
+.project2,
+.project3,
+.project4 {
+  position: relative;
+  margin-top: 20px;
+
+  height: 100%;
+  padding-bottom: 10px;
+}
+.projects-container a {
+  text-decoration: none;
+}
+.projects-container div h1 {
+  color: var(--blue);
+  font-size: 15px;
+  margin-top: 0px;
+  padding-top: 10%;
+  margin-left: 3.5%;
+  font-weight: 400;
+}
+.projects-container div img {
+  display: block;
+
+  opacity: 0.7;
+  width: 92%;
+  border-radius: 5px;
+
+  margin-top: 5%;
+  margin-left: 3.5%;
+}
+.description {
+  position: absolute;
+  bottom: 15%;
+  padding: 5px;
+  left: 10px;
+  padding-left: 15px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 11px;
+
+  margin-top: 5%;
+  margin-left: 3.5%;
+  width: 85%;
+  height: auto;
+  background-color: var(--blue);
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.15);
+}
+.description2 {
+  position: absolute;
+  bottom: 15%;
+  padding: 5px;
+  left: 10px;
+  padding-left: 15px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 11px;
+  margin-top: 5%;
+  margin-left: 3.5%;
+  width: 85%;
+  height: auto;
+  background-color: var(--blue);
+  border-radius: 5px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.15);
+}
+.description p {
+  color: white;
+  font-size: 14px;
+}
+.description2 p {
+  color: white;
+  font-size: 14px;
+}
+.p1-icons {
+  margin-top: 20%;
+  display: flex;
+  gap: 15px;
+
+  width: 100px;
+  margin-left: 70%;
+}
+.p2-icons {
+  margin-top: 20%;
+  display: flex;
+  gap: 15px;
+
+  width: 100px;
+  margin-left: 70%;
+}
+.nav-bar {
+  display: none;
+}
+#sidebar-active {
+  display: none;
+}
+.open-sidebar-button {
+  width: 20%;
+}
+.open {
+  margin-left: 50%;
+  margin-top: 100%;
+}
+
+.side-bar {
+  position: fixed;
+  width: 250px;
+  left: -100%;
+  height: 100%;
+
+  background-color: white;
+
+  transition: left 0.5s ease-out;
+}
+#sidebar-active:checked ~ .side-bar {
+  left: 0;
+}
+.close {
+  margin-left: 75%;
+}
+.side-bar a {
+  text-decoration: none;
+}
+.side-bar p {
+  margin-top: 20%;
+  margin-left: 30%;
+  font-size: 20px;
+}
+
+.list a:hover {
+  border-bottom: solid black 2px;
+
+  color: var(--blue);
+}
+.resume3 {
+  padding: 10px 10px;
+  border-style: solid;
+
+  border-color: blueviolet;
+  color: blueviolet;
+  border-width: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.15s;
+  margin-top: 30%;
+  margin-left: 30%;
+}
+
+/* part4 */
+.part4 {
+  min-width: 240px;
+  height: 500px;
+
+  padding-top: 10%;
+  text-align: center;
+  margin-top: 50%;
+}
+.part4 h1 {
+  font-weight: 400;
+  font-family: Roboto Mono;
+  font-size: 16px;
+
+  color: var(--blue);
+}
+.part4 h2 {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 33px;
+  margin-top: 10px;
+  color: black;
+}
+.part4 p {
+  margin-top: 20px;
+  font-size: 18px;
+
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.contact {
+  padding: 10px 10px;
+  border-style: solid;
+
+  border-color: blueviolet;
+  color: blueviolet;
+  border-width: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.15s;
+  margin-top: 10%;
+}
+.part5-l3-1 p {
+  font-size: 15px;
+  color: var(--blue);
+}
+.part4 a {
+  text-decoration: none;
+}
+
+/* left  */
+
+.left {
+  display: none;
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .u {
+    margin-top: 2%;
+    width: 10%;
+    border-bottom: solid black 1px;
+  }
+  .v {
+    border-bottom: solid black 1px;
+    width: 10%;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  .side-bar {
+    display: none;
+  }
+  .open-sidebar-button {
+    display: none;
+  }
+  .nav-bar {
+    display: flex;
+  }
+  .part1 h1 {
+    margin-top: 20%;
+  }
+  .left {
+    display: block;
+    position: fixed;
+    left: 0;
+    width: 8%;
+    height: 100%;
+    margin-left: 2%;
+  }
+  .vl {
+    border-left: 2px solid blueviolet;
+    height: 100%;
+    margin-left: 35%;
+    margin-top: 50%;
+    color: white;
+  }
+  .social-icons {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 170px;
+    padding-left: 10px;
+  }
+
+  .right {
+    display: block;
+    position: fixed;
+    right: 0;
+    width: 8%;
+    height: 100%;
+    margin-right: 2%;
+  }
+  .mail {
+    display: block;
+    padding-left: 24px;
+    padding-top: 170px;
+    writing-mode: vertical-rl;
+    font-size: 14px;
+    padding-bottom: 30px;
+  }
+  .mail p {
+    font-family: Roboto Mono;
+    font-size: 14px;
+  }
+  .vl2 {
+    border-left: 2px solid blueviolet;
+    height: 100%;
+    margin-left: 50%;
+    margin-top: 10%;
+    color: white;
+  }
+  .part1 {
+    padding-left: 15%;
+    padding-right: 10%;
+  }
+  .part1 h1 {
+    padding-top: 5%;
+  }
+  .part1 h2 {
+    font-size: 60px;
+  }
+  .part1 h3 {
+    font-size: 50px;
+  }
+  .part2 {
+    padding-left: 15%;
+    padding-right: 10%;
+    height: 600px;
+    padding-top: 5%;
+  }
+  .part2 h1 {
+    margin-top: 10%;
+    padding-top: 15%;
+  }
+  .part2 img {
+    margin-top: 5%;
+    border-radius: 10%;
+    width: 40%;
+
+    margin-left: 0%;
+  }
+  .middle {
+    width: 50%;
+    position: relative;
+    top: -235px;
+    left: 250px;
+  }
+  .lower {
+    position: relative;
+    top: -205px;
+  }
+  .bottom {
+    position: relative;
+    top: -205px;
+  }
+  .part3 {
+    padding-left: 15%;
+    padding-right: 10%;
+    padding-top: 5%;
+  }
+  .part3 h1 {
+    margin-top: 0%;
+    padding-top: 15%;
+  }
+  .project1,
+  .project2 {
+    width: 95%;
+    height: 80%;
+  }
+  .project1 h1 {
+    padding-top: 0%;
+    margin-top: 0%;
+  }
+  .projects-container div img {
+    display: block;
+
+    opacity: 0.7;
+    width: 70%;
+    border-radius: 5px;
+
+    margin-top: 5%;
+    margin-left: 3.5%;
+  }
+  .projects-container div h1 {
+    color: var(--blue);
+    font-size: 15px;
+    margin-top: 0px;
+    padding-top: 2%;
+    margin-left: 3.5%;
+  }
+  .description {
+    bottom: 30%;
+    width: 280px;
+    left: 240px;
+  }
+  .description2 {
+    bottom: 30%;
+    width: 280px;
+    left: 240px;
+  }
+
+  .p1-icons {
+    margin-top: -5%;
+    display: flex;
+    gap: 15px;
+
+    width: 100px;
+    margin-left: 85%;
+  }
+  .p2-icons {
+    margin-top: -5%;
+    display: flex;
+    gap: 15px;
+
+    width: 100px;
+    margin-left: 85%;
+  }
+  .part4 {
+    margin-top: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  .part4 h1 {
+    margin-top: 0%;
+    padding-top: 15%;
+  }
+  .part4 p {
+    padding-right: 5px;
+  }
+
+  .profile {
+    display: none;
+    margin-left: 50%;
+    margin-top: 20%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .logo {
+    margin-top: 2%;
+    margin-left: 10%;
+    width: 4%;
+    display: flex;
+    gap: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo p {
+    font-family: Roboto Mono;
+    font-weight: bold;
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .u {
+    margin-top: 2%;
+    width: 10%;
+    margin-left: 7%;
+    border-bottom: solid black 1px;
+  }
+  .v {
+    border-bottom: solid black 1px;
+    width: 10%;
+    margin-top: 2%;
+    margin-left: 3%;
+  }
+  .side-bar {
+    display: none;
+  }
+  .open-sidebar-button {
+    display: none;
+  }
+  .nav-bar {
+    display: flex;
+  }
+  .part1 h1 {
+    margin-top: 20%;
+  }
+  .left {
+    display: block;
+    position: fixed;
+    left: 0;
+    width: 4%;
+    height: 100%;
+    margin-left: 2%;
+  }
+  .vl {
+    border-left: 2px solid blueviolet;
+    height: 100%;
+    margin-left: 35%;
+    margin-top: 50%;
+    color: white;
+  }
+  .social-icons {
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 5px;
+    padding-bottom: 30px;
+  }
+
+  .right {
+    display: block;
+    position: fixed;
+    right: 0;
+    width: 4%;
+    height: 100%;
+    margin-right: 2%;
+  }
+  .mail {
+    display: block;
+    padding-left: 15px;
+    padding-top: 105px;
+    writing-mode: vertical-rl;
+    font-size: 14px;
+    padding-bottom: 30px;
+  }
+  .mail p {
+    font-family: Roboto Mono;
+    font-size: 14px;
+  }
+
+  .vl2 {
+    border-left: 2px solid blueviolet;
+    height: 100%;
+    margin-left: 50%;
+    margin-top: 10%;
+    color: white;
+  }
+  .part1 {
+    margin-top: -1.5%;
+
+    padding-left: 16.5%;
+    padding-right: 10%;
+  }
+  .part1 h2 {
+    font-size: 80px;
+  }
+  .part1 h3 {
+    font-size: 70px;
+  }
+  .part1 p {
+    width: 50%;
+  }
+  .resume2 {
+    padding: 1% 3% 1% 3%;
+    margin-top: 5%;
+    margin-left: 20%;
+  }
+  .part2 {
+    padding-left: 15%;
+    padding-right: 10%;
+    height: 700px;
+  }
+  .part2 h1 {
+    font-family: Roboto Mono;
+    margin-top: 0%;
+    margin-left: 7%;
+    padding-top: 15%;
+    font-size: 30px;
+  }
+  .part2 img {
+    margin-top: 5%;
+    border-radius: 10%;
+    width: 30%;
+
+    margin-left: 7%;
+  }
+  .middle {
+    font-size: 18px;
+    width: 75%;
+  }
+  .lower {
+    font-size: 18px;
+
+    position: relative;
+    right: 250px;
+    top: 25px;
+  }
+  .bottom {
+    font-size: 18px;
+
+    position: relative;
+    right: 250px;
+    top: 25px;
+  }
+  .aboutcontent {
+    position: relative;
+  }
+  .aboutcontent2 {
+    position: absolute;
+    left: 42%;
+    top: 15%;
+  }
+  .part3 {
+    padding-left: 15%;
+    padding-right: 10%;
+  }
+  .part3 h1 {
+    margin-top: 0%;
+    padding-top: 10%;
+    font-size: 30px;
+    margin-left: 3%;
+    font-family: Roboto Mono;
+  }
+  .project1,
+  .project2,
+  .project3,
+  .project4 {
+    position: relative;
+    margin-top: 50px;
+
+    height: 100%;
+    padding-bottom: 10px;
+    background-color: white;
+
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  .project1,
+  .project2 {
+    width: 95%;
+    height: 80%;
+    margin-top: 10%;
+  }
+
+  .projects-container div img {
+    display: block;
+
+    opacity: 0.7;
+    width: 45%;
+    border-radius: 5px;
+
+    margin-top: 5%;
+    margin-left: 3.5%;
+  }
+  .projects-container div h1 {
+    color: var(--blue);
+    font-size: 15px;
+    margin-top: 3.5%;
+    padding-top: 0%;
+    margin-left: 3.5%;
+  }
+  .project1 h1 {
+    position: absolute;
+    left: 55%;
+    top: -11%;
+  }
+  .project2 h1 {
+    position: absolute;
+
+    top: -11%;
+  }
+  .project2 img {
+    padding-left: 40%;
+  }
+  .project2 .description {
+    left: 0;
+  }
+
+  .description {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    height: 100px;
+    bottom: 25%;
+    width: 450px;
+    left: 150px;
+  }
+  .description2 {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    height: 100px;
+    bottom: 25%;
+    width: 450px;
+    left: 0px;
+  }
+  .description p {
+    font-size: 16px;
+    color: white;
+  }
+  .description2 p {
+    font-size: 16px;
+    color: white;
+  }
+  .p2-icons {
+    margin-top: -3%;
+    display: flex;
+    gap: 15px;
+
+    margin-left: 5%;
+    position: absolute;
+  }
+
+  .p1-icons {
+    margin-top: -3%;
+    display: flex;
+    gap: 15px;
+
+    width: 100px;
+    margin-left: 80%;
+  }
+  .part4 {
+    margin-top: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .part4 h1 {
+    margin-top: 0%;
+    padding-top: 5%;
+  }
+  .part4 h2 {
+    font-size: 50px;
+  }
+  .part4 p {
+    margin-left: 15%;
+    padding-right: 5px;
+    width: 65%;
+  }
+
+  .logo {
+    margin-top: 2%;
+    margin-left: 7%;
+    width: 4%;
+    display: flex;
+    gap: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo p {
+    font-family: Roboto Mono;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .profile {
+    display: block;
+    margin-left: 50%;
+    margin-top: 20%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .header {
+    background-color: palevioletred;
+  }
+}
+@media screen and (min-device-width: 1025px) {
+  .u {
+    margin-top: 2%;
+    width: 5%;
+    border-bottom: solid black 1px;
+    margin-left: 7%;
+  }
+  .v {
+    border-bottom: solid black 1px;
+    width: 5%;
+    margin-top: 2%;
+    margin-left: 3%;
+  }
+  .side-bar {
+    display: none;
+  }
+  .open-sidebar-button {
+    display: none;
+  }
+  .nav-bar {
+    display: flex;
+  }
+  .part1 h1 {
+    margin-top: 20%;
+  }
+  .left {
+    display: block;
+    position: fixed;
+    left: 0;
+    width: 4%;
+    height: 100%;
+    margin-left: 2%;
+  }
+  .vl {
+    border-left: 2px solid blueviolet;
+    height: 100%;
+    margin-left: 35%;
+    margin-top: 50%;
+    color: white;
+  }
+  .social-icons {
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 10px;
+  }
+
+  .right {
+    display: block;
+    position: fixed;
+    right: 0;
+    width: 4%;
+    height: 100%;
+    margin-right: 2%;
+  }
+  .mail {
+    display: block;
+    padding-left: 24px;
+    padding-top: 50px;
+    writing-mode: vertical-rl;
+    font-size: 14px;
+    padding-bottom: 25px;
+  }
+  .mail p {
+    font-family: Roboto Mono;
+    font-size: 14px;
+  }
+  .vl2 {
+    border-left: 2px solid blueviolet;
+    height: 100%;
+    margin-left: 50%;
+    margin-top: 0%;
+    color: white;
+  }
+  .part1 {
+    margin-top: -1.5%;
+
+    padding-left: 16.5%;
+    padding-right: 10%;
+  }
+  .part1 h2 {
+    font-size: 80px;
+  }
+  .part1 h3 {
+    font-size: 70px;
+  }
+  .part1 p {
+    width: 50%;
+  }
+  .resume2 {
+    padding: 1% 3% 1% 3%;
+    margin-top: 5%;
+    margin-left: 20%;
+  }
+  .part2 {
+    padding-left: 15%;
+    padding-right: 10%;
+    height: 700px;
+  }
+  .part2 h1 {
+    font-family: Roboto Mono;
+    margin-top: 0%;
+    margin-left: 7%;
+    padding-top: 15%;
+    font-size: 30px;
+  }
+  .part2 img {
+    margin-top: 5%;
+    border-radius: 10%;
+    width: 30%;
+
+    margin-left: 7%;
+  }
+  .middle {
+    font-size: 18px;
+    width: 75%;
+  }
+  .lower {
+    font-size: 18px;
+  }
+  .bottom {
+    font-size: 18px;
+
+    position: relative;
+  }
+  .aboutcontent {
+    position: relative;
+  }
+  .aboutcontent2 {
+    position: absolute;
+    left: 42%;
+    top: 15%;
+  }
+  .part3 {
+    padding-left: 15%;
+    padding-right: 10%;
+  }
+  .part3 h1 {
+    margin-top: 0%;
+    padding-top: 10%;
+    font-size: 30px;
+    margin-left: 3%;
+    font-family: Roboto Mono;
+  }
+  .project1,
+  .project2,
+  .project3,
+  .project4 {
+    position: relative;
+    margin-top: 50px;
+
+    height: 100%;
+    padding-bottom: 10px;
+    background-color: white;
+
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  .project1,
+  .project2 {
+    width: 95%;
+    height: 80%;
+    margin-top: 10%;
+  }
+
+  .projects-container div img {
+    display: block;
+
+    opacity: 0.7;
+    width: 45%;
+    border-radius: 5px;
+
+    margin-top: 5%;
+    margin-left: 3.5%;
+  }
+  .projects-container div h1 {
+    color: var(--blue);
+    font-size: 15px;
+    margin-top: 3.5%;
+    padding-top: 0%;
+    margin-left: 3.5%;
+  }
+  .project1 h1 {
+    position: absolute;
+    left: 61.5%;
+    top: -11%;
+  }
+  .project2 h1 {
+    position: absolute;
+
+    top: -11%;
+  }
+  .project2 img {
+    padding-left: 40%;
+  }
+
+  .description {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    height: auto;
+    bottom: 35%;
+    width: 450px;
+    left: 410px;
+  }
+  .description2 {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    height: auto;
+    bottom: 35%;
+    width: 450px;
+    left: 0px;
+  }
+  .description p {
+    font-size: 16px;
+    color: white;
+  }
+  .description2 p {
+    font-size: 16px;
+    color: white;
+  }
+
+  .p1-icons {
+    margin-top: -3%;
+    display: flex;
+    gap: 15px;
+
+    width: 100px;
+    margin-left: 80%;
+    cursor: pointer;
+  }
+  .p2-icons {
+    position: absolute;
+    margin-top: -3%;
+    display: flex;
+    gap: 15px;
+
+    width: 100px;
+    margin-left: 5%;
+    cursor: pointer;
+  }
+
+  .part4 {
+    margin-top: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .part4 h1 {
+    margin-top: 0%;
+    padding-top: 5%;
+  }
+  .part4 h2 {
+    font-size: 50px;
+  }
+  .part4 p {
+    margin-left: 22%;
+    padding-right: 5px;
+    width: 55%;
+  }
+
+  .logo {
+    margin-top: 2%;
+    margin-left: 7%;
+    width: 4%;
+    display: flex;
+    gap: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo p {
+    font-family: Roboto Mono;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .profile {
+    display: block;
+    margin-left: 50%;
+    margin-top: 20%;
+    width: 100%;
+    border-radius: 50%;
+  }
+}
